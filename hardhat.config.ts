@@ -1,10 +1,10 @@
+import 'dotenv/config';
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 // https://github.com/projectsophon/hardhat-circom
 import "hardhat-circom";
 // circuits
 import circuits = require('./circuits.config.json')
-
 // set env var to the root of the project
 process.env.BASE_PATH = __dirname;
 
@@ -21,6 +21,12 @@ const config: HardhatUserConfig = {
         version: "0.6.11",
       }
     ]
+  },
+  networks:{
+    sepolia: {
+      url: process.env.SEPOLIA_URL,
+      accounts: [process.env.PRIVATE_KEY],
+    }
   },
   circom: {
     // (optional) Base path for input files, defaults to `./circuits/`

@@ -11,8 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@types/node": "^22.2.0",
+    "dotenv": "^16.4.5",
     "ffjavascript": "^0.2.57",
-    "hardhat": "^2.12.7"
+    "hardhat": "^2.22.8"
   },
   "dependencies": {
     "hardhat-circom": "^3.3.2",
