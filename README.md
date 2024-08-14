@@ -67,3 +67,26 @@ template OR() {
 }
 
 component main = myCircuit();
+
+### Installation
+
+1. Clone the repository and navigate to the project directory.
+2. Install dependencies:
+
+   ```bash
+   npm install
+2. Deployment
+   ```bash
+   npx hardhat circom
+   npx hardhat run scripts/deploy.ts --network sepolia
+
+## Features
+
+1. **Performing Logical Operations:** The zkSNARK circuit performs AND, OR, and NOT operations to demonstrate basic logical gate functionality.
+2. **Creating a zkSNARK Circuit:** Implementation of a zkSNARK circuit using `circom` to verify logical operations.
+
+### License
+This project is licensed under the MIT License. 
+
+### Author
+Divyansh Sandhu
