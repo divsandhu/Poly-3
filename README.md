@@ -67,7 +67,7 @@ template OR() {
 }
 
 component main = myCircuit();
-```plaintext
+```
 
 ### Installation
 
